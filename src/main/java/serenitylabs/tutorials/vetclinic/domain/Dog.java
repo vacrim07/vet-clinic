@@ -5,7 +5,12 @@ public class Dog {
     private final String breed;
     private final String colour;
 
-    public Dog(String name, String breed, String colour) {
+    @Override
+	public String toString() {
+		return "Fido, the black labrador";
+	}
+
+	public Dog(String name, String breed, String colour) {
 
         this.name = name;
         this.breed = breed;
