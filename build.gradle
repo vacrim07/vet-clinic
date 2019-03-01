@@ -15,4 +15,7 @@ task wrapper(type: Wrapper) {
 dependencies {
     testCompile group: 'junit', name: 'junit', version: '4.+'
     testCompile 'org.assertj:assertj-core:3.1.0'
+    compile "com.google.guava:guava:16+"
+    testImplementation 'junit:junit:4.12'
+    testImplementation 'org.hamcrest:hamcrest-library:1.3'
 }
